@@ -277,6 +277,11 @@
     transition: all 0.2s; align-self: flex-start;
   }
   .contact-form button:hover { background: #333; }
+ .contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
 
   /* FOOTER */
   footer {
@@ -588,13 +593,35 @@
         </a>
       </div>
     </div>
-    <div class="contact-form">
-      <input type="text" placeholder="Your name" />
-      <input type="email" placeholder="Your email" />
-      <textarea placeholder="Your message..."></textarea>
-      <button type="submit">Send message →</button>
-    </div>
-  </div>
+<div class="contact-form">
+  <form action="https://formspree.io/f/mlgyjzeg" method="POST">
+
+   <input type="hidden" name="_next" value="https://charan822.github.io/charan-portfolio/" />
+    
+    <input
+      type="text"
+      name="name"
+      placeholder="Your name"
+      required
+    />
+
+    <input
+      type="email"
+      name="email"
+      placeholder="Your email"
+      required
+    />
+
+    <textarea
+      name="message"
+      placeholder="Your message..."
+      required
+    ></textarea>
+
+    <button type="submit">Send message →</button>
+
+  </form>
+</div>
 </section>
 
 <!-- FOOTER -->
