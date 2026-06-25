@@ -7,6 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Syne:wght@400;700;800&display=swap" rel="stylesheet"/>
+<link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700,800&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -92,14 +93,15 @@
   @keyframes pulse { 0%,100%{opacity:1; transform:scale(1)} 50%{opacity:0.5; transform:scale(0.85)} }
 
   .hero-name {
-    font-family: 'Melodrama', sans-serif;
+    font-family: 'Clash Display', sans-serif;
     font-size: clamp(52px, 9vw, 100px);
-    font-weight: 800;
+    font-weight: 700;
     line-height: 0.95;
-    letter-spacing: -3px;
+    letter-spacing: -1px;
     color: var(--text);
     animation: fadeUp 0.7s 0.1s ease both;
   }
+
   .hero-name span { color: var(--text3); }
 
   .hero-tagline {
@@ -323,11 +325,11 @@
   <div class="hero-chips">
     <span class="chip">PySpark</span>
     <span class="chip">Databricks</span>
-    <span class="chip">Azure Data Factory</span>
-    <span class="chip">Python</span>
     <span class="chip">SQL Server</span>
+    <span class="chip">Azure Data Factory</span>
     <span class="chip">Delta Lake</span>
     <span class="chip">Snowflake</span>
+    <span class="chip">Python</span>
   </div>
   <div class="hero-ctas">
     <a href="#projects" class="btn-primary">View my work ↓</a>
